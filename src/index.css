@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+@theme {
+  --color-coffee-dark: #2C1810;
+  --color-coffee-medium: #483420;
+  --color-coffee-light: #8B5E3C;
+  --color-coffee-cream: #F5EBE0;
+  --color-coffee-accent: #BC8A5F;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  background-color: var(--color-coffee-cream);
+  color: var(--color-coffee-dark);
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}

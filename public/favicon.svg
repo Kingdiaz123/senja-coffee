@@ -1,0 +1,29 @@
+const LogoSenja = ({ className }) => (
+  <motion.div
+    className={className}
+    whileHover={{ 
+      filter: "drop-shadow(0px 8px 15px rgba(255, 143, 0, 0.3))",
+      scale: 1.05 
+    }}
+    transition={{ duration: 0.3 }}
+  >
+    <svg 
+      viewBox="0 0 400 400" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full"
+    >
+      <path d="M165.5 105C130 110 100 150 100 200C100 250 130 290 165.5 295V105Z" fill="#3E2723"/>
+      <path d="M165.5 105C150 120 145 150 150 200C155 250 160 280 165.5 295" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+      
+      <path d="M234.5 105C270 110 300 150 300 200C300 250 270 290 234.5 295V105Z" fill="#3E2723" transform="scale(-1 1) translate(-400 0)"/>
+      <path d="M250 105C265 120 270 150 265 200C260 250 255 280 250 295" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+
+      <circle cx="200" cy="180" r="35" fill="#FF8F00"/>
+      <rect x="160" y="200" width="80" height="4" fill="white"/>
+
+      <text x="200" y="340" textAnchor="middle" fill="#FF8F00" fontSize="55" fontWeight="900" fontFamily="sans-serif">Senja</text>
+      <text x="200" y="385" textAnchor="middle" fill="#3E2723" fontSize="28" fontWeight="bold" fontFamily="sans-serif">Coffee</text>
+    </svg>
+  </motion.div>
+);
